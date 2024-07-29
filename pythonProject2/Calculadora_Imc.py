@@ -24,17 +24,15 @@ def calcular(peso_entry,altura_entry,medida_valor):
     peso = peso_entry.get()
     altura = altura_entry.get()
 
+
     #VERIFICA SE SÃO NULOS
     if not peso or not altura:
         medida_valor.configure(text="VAZIO, POR FAVOR INSIRA UM DADO", text_color="red")
         return
 
-    if not "," in altura or not"," in altura:
-        altura = altura[0] + "." + altura[1::]
-        
-
     peso = peso.replace(",", ".")
     altura = altura.replace(",", ".")
+
 
     try:
         peso_formatado = float(peso)
@@ -51,7 +49,7 @@ def calcular(peso_entry,altura_entry,medida_valor):
 #JANELA PRINCIPAL ONDE OCORRE TUDO.
 def janela():
     janela = ctk.CTk()
-    janela.geometry('500x300')
+    janela.geometry('400x250')
     janela.title('Calculadora de IMC')
 
 
