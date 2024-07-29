@@ -54,11 +54,11 @@ def janela():
 
 
     ctk.CTkLabel(janela, text='PESO (kg): ').pack()
-    peso = ctk.CTkEntry(janela, width=120,height=30)
+    peso = ctk.CTkEntry(janela, width=120,height=30,placeholder_text="ex: 75.5")
     peso.pack()
 
-    ctk.CTkLabel(janela, text='ALTURA (m ou cm): ').pack()
-    altura = ctk.CTkEntry(janela, width=120,height=30)
+    ctk.CTkLabel(janela, text='ALTURA: ').pack()
+    altura = ctk.CTkEntry(janela, width=120,height=30,placeholder_text="ex: 1,90 ")
     altura.pack()
 
     medida = ctk.CTkLabel(janela, text="SUA MEDIDA: ")
